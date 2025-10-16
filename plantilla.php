@@ -1,35 +1,35 @@
 <?php
 session_start();
-  if (isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok") {
-    echo '<div class="wrapper">';
-    include "vistas/modulos/encabezado.php";
-    include "vistas/modulos/menulateral.php";
-    if (isset($_GET["pagina"])) {
-      $pagina = $_GET["pagina"];
+if (isset($_SESSION["iniciarSesion"]) && $_SESSION["iniciarSesion"] == "ok") {
+  echo '<div class="wrapper">';
+  include "vistas/modulos/encabezado.php";
+  include "vistas/modulos/menulateral.php";
+  if (isset($_GET["pagina"])) {
+    $pagina = $_GET["pagina"];
 
-      if (
-        $pagina == "inicio" ||
-        $pagina == "archivos" ||
-        $pagina == "usuarios" ||
-        $pagina == "proyectos" ||
-        $pagina == "clientes" ||
-        $pagina == "productos" ||
-        $pagina == "ventas" ||
-        $pagina == "reportes" ||
-        $pagina == "salir"
-      ) {
-        include "vistas/modulos/" . $pagina . ".php";
-      } else {
-        include "vistas/modulos/error404.php";
-      }
+    if (
+      $pagina == "inicio" ||
+      $pagina == "archivos" ||
+      $pagina == "usuarios" ||
+      $pagina == "proyectos" ||
+      $pagina == "clientes" ||
+      $pagina == "productos" ||
+      $pagina == "ventas" ||
+      $pagina == "reportes" ||
+      $pagina == "salir"
+    ) {
+      include "vistas/modulos/" . $pagina . ".php";
     } else {
-      include "vistas/modulos/inicio.php";
+      include "vistas/modulos/error404.php";
     }
-    include "vistas/modulos/piedepagina.php";
-    echo '</div>';
   } else {
-    include "vistas/modulos/login.php";
+    include "vistas/modulos/inicio.php";
   }
+  include "vistas/modulos/piedepagina.php";
+  echo '</div>';
+} else {
+  include "vistas/modulos/login.php";
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -37,7 +37,7 @@ session_start();
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE</title>
+  <title>Generic Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- CSS... -->
@@ -69,7 +69,7 @@ session_start();
 <!-- CUERPO DEL DOCUMENTO -->
 
 <body class="login-page hold-transition skin-blue sidebar-mini"> <!-- sidebar-collapse -->
-  
+
 </body>
 
 </html>
