@@ -1,6 +1,6 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href="#" class="logo">
+  <a href="index.php" class="logo">
     <span class="logo-mini"><b>Q-B</b></span>
     <span class="logo-lg"><b>Q-Bot</b></span>
   </a>
