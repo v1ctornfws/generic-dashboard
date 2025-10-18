@@ -160,6 +160,7 @@
   .actions {
     display: flex;
     justify-content: center;
+    gap: 12px;
     padding-top: 8px;
   }
 
@@ -175,7 +176,23 @@
     box-shadow: 0 14px 34px rgba(37, 99, 235, 0.14);
   }
 
-  .btn-primary:hover {
+  /* botón verde para registrarse */
+  .btn-success {
+    background: #16a34a;
+    color: white;
+    border: 0;
+    padding: 14px 22px;
+    font-size: 1.05rem;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(16, 185, 129, 0.12);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-success:hover {
     filter: brightness(1.03);
     transform: translateY(-1px);
   }
@@ -247,6 +264,7 @@
 
       <div class="actions">
         <button type="submit" class="btn-primary" name="login">Ingresar</button>
+        <a href="registro.php" class="btn-success" role="button">Registrarse</a>
       </div>
 
       <?php
