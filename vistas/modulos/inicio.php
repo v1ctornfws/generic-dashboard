@@ -18,18 +18,18 @@
       <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
         <div style="flex:1;min-width:220px">
           <h2 style="margin:0 0 6px 0;color:#204d74">Bienvenido, Victor Amaya</h2>
-          <p style="margin:0 0 8px 0;color:#2f4f66">
+          <p style="color:#2f4f66">
             Este es tu panel de control. Desde aquí puedes revisar ventas, clientes, proyectos, archivos y generar
             reportes rápidamente.
           </p>
-          <p style="margin:0">
-            <a href="plantilla.php?pagina=ventas" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Ver
+          <p>
+            <a style="text-decoration:none" href="plantilla.php?pagina=ventas" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Ver
               ventas</a>
-            <a href="plantilla.php?pagina=clientes" class="btn btn-warning"><i class="fa fa-address-book"></i>
+            <a style="text-decoration:none" href="plantilla.php?pagina=clientes" class="btn btn-warning"><i class="fa fa-address-book"></i>
               Clientes</a>
-            <a href="plantilla.php?pagina=proyectos" class="btn btn-success" style="margin-left:6px"><i
+            <a style="text-decoration:none" href="plantilla.php?pagina=proyectos" class="btn btn-success" style="margin-left:6px"><i
                 class="fa fa-briefcase"></i> Proyectos</a>
-            <a href="plantilla.php?pagina=archivos" class="btn btn-danger" style="margin-left:6px"><i
+            <a style="text-decoration:none" href="plantilla.php?pagina=archivos" class="btn btn-danger" style="margin-left:6px"><i
                 class="fa fa-folder"></i> Archivos</a>
           </p>
         </div>

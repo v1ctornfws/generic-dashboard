@@ -4,24 +4,7 @@ include 'controladores/conexion.php';
 $sql = "SELECT * FROM usuarios";
 $resultado = $conexion->query($sql);
 ?>
-<style>
-  .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    vertical-align: middle;
-  }
-
-  .dot-green {
-    background: #28a745;
-  }
-
-  .dot-red {
-    background: #dc3545;
-  }
-</style>
-
+<link rel="stylesheet" href="controladores/estados_.css">
 <div class="content-wrapper">
   <section class="content-header">
     <h1>

@@ -1,0 +1,15 @@
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.dot-green {
+    background: #28a745;
+}
+
+.dot-red {
+    background: #dc3545;
+}
